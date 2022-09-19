@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+/* comentarios en CSS */
+
+html {
+  font-size: 16px; /* valor predeterminado */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(164, 96, 41);
+ /* AQUI AGREGAMOS LA IMAGEN DE FONDO */
+  background-image: url("./images/lego.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* h2 {
+  color: lightseagreen;
+  background-color: red;
+  display: inline;
+}
+
+section {
+  background-color: blue;
+} */
+
+
+#main-title {
+  color: white;
+  /* font-size: 48px; */
+  font-size: 3rem; /* 16px * 2 = 48 */
+  /* rem. relacion con la fuente root */
+  /* em relacion al tamaño de la fuente del elemento padre */
+  text-align: center;
+  font-family: 'Bungee Spice';
+}
+
+/* section h2 {
+  color: darkgray
+} */
+
+.section-title {
+  color: darkgray;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 5px black;
+}
+
+section {
+  /* border-style: solid;
+  border-width: 3px;
+  border-color: rgb(79, 11, 11); */
+  border: solid 3px rgb(79, 11, 11);
+  /* margin: 10px; */
+  /* margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px; */
+  margin: 10px 10px 30px 10px;
+  /* margin: arriba derecha abajo izquierda */
+  padding: 30px;
+}
+
+#section-toys {
+  background-color: lightblue;
+}
+
+#section-games {
+  background-color: lightgreen;
+}
+
+#section-movies {
+  background-color: lightcoral;
+}
+
+#section-toys li {
+  color: blue
+}
+
+#section-games li {
+  color: green
+}
+
+#section-movies li {
+  color: red
+}
+
+/* h2, li {
+  font-size: 30px
+} */
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+}
+
+nav button {
+  width: 31%;
+}
+
+/* PSEUDOCLASES */
+
+nav button:hover {
+  background-color: orange;
+}
+
+nav button:active {
+  background-color: darkgoldenrod;
+  border: 3px solid darkmagenta
+}
+
+/* PSEUDOELEMENTS */
+li::marker {
+  color: darkred;
+  content: "🧸 "
+}
+
+li::first-letter {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+section li:first-child:hover::after {
+  content: "Este es el elemento más buscado";
+  font-size: 0.8rem;
+  background-color: white;
+  color: darkgray;
+  padding: 10px;
+  margin-left: 5px;
+}
